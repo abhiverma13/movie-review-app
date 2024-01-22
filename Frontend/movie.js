@@ -2,7 +2,7 @@ const url = new URL(location.href);
 const movieId = url.searchParams.get("id");
 const movieTitle = url.searchParams.get("title");
 
-const APILINK = 'https://movie-app-backend.averma1304.repl.co/api/v1/reviews/';
+const APILINK = 'http://localhost:8000/api/v1/reviews';
 
 const main = document.getElementById("section");
 const title = document.getElementById("title");
@@ -31,6 +31,19 @@ main.appendChild(div_new)
 returnReviews(APILINK);
   
 function returnReviews(url){
+  const div_card = document.createElement('div');
+      div_card.innerHTML = `
+          <div class="row">
+            <div class="column">
+              <div class="card" id="">
+                <p><strong>Review: </strong>Amazing Film</p>
+                <p><strong>User: </strong>Abhi</p>
+                <p><a href="#" onClick="">✏️</a> <a href="#" onClick="">🗑️</a></p>
+              </div>
+            </div>
+          </div>
+        `
+  main.appendChild(div_card);
   fetch(url + "movie/" + movieId).then(res => res.json())
   .then(function(data){
     console.log(data);
