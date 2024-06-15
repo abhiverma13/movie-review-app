@@ -1,6 +1,6 @@
 # Movie-Reviews-App
 
-This is a web application that lists a wide selection of movies, with the newest being on the homepage, using The Movie Database API. It was built using HTML, CSS, JavaScript and also uses MongoDB to store reviews for each movie. I learned how to make a RESTful API as well as use an existing API through node.js and express.js.
+This is a web application that lists a wide selection of movies, with the newest being on the homepage, using The Movie Database API. It was built using HTML, CSS, JavaScript and also uses MongoDB to store reviews for each movie. I learned how to make a RESTful API as well as use an existing API through Node.js and Express.js.
 
 
 This is what the app looks like:
